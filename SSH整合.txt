@@ -1,0 +1,35 @@
+整合：
+1.在数据库中把表建出来
+2.准备所有的jar包   spring  struts2   hibernate   mysql-jdbc
+		druid   fastjson  junit   jquery
+	需要单独导入：struts2-spring-plugin-2.3.30.jar
+
+
+3.IDEA创建一个新工程
+	选择创建Spring项目，创建一个空的spring的配置文件
+	勾选web-application 
+	勾选struts2,
+	勾选hibernate，不创建配置文件
+4.把jar包导入，配置tomcat
+5.创建项目的结构
+spring-config.xml
+	component-scan  property-placeholder
+	aspectj-autoproxy   annotation-driven
+	dataSource    transactionManager
+	sessionFactory(hibernateProperties)
+struts.xml   
+	constant
+
+web.xml   
+	ContextLoaderListener   
+	contextConfigLocation
+	核心Filter
+
+创建jdbc.properties
+
+6.反向生成PO
+7.写index.jsp   home.jsp
+    配置action  
+    Action类
+    DAO--Service
+
